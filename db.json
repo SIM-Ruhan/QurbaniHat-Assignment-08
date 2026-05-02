@@ -1,0 +1,121 @@
+{
+    "models": [
+  {
+    "id": 1,
+    "name": "Deshi Shahi Cow",
+    "type": "Cow",
+    "breed": "Local Deshi",
+    "price": 120000,
+    "weight": 280,
+    "age": 3,
+    "location": "Bogura",
+    "description": "Healthy deshi cow suitable for Qurbani. Well fed with natural খাবার.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Cow_female_black_white.jpg",
+    "category": "Large Animal"
+  },
+  {
+    "id": 2,
+    "name": "Australian Friesian Cow",
+    "type": "Cow",
+    "breed": "Friesian",
+    "price": 180000,
+    "weight": 350,
+    "age": 4,
+    "location": "Sirajganj",
+    "description": "High milk producing imported breed, ভালো যত্নে পালন করা হয়েছে.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Holstein_cow.jpg",
+    "category": "Dairy Animal"
+  },
+  {
+    "id": 3,
+    "name": "Black Bengal Goat",
+    "type": "Goat",
+    "breed": "Black Bengal",
+    "price": 15000,
+    "weight": 25,
+    "age": 1.5,
+    "location": "Rajshahi",
+    "description": "Popular meat goat in Bangladesh, very healthy and সক্রিয়.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Black_Bengal_Goat.jpg",
+    "category": "Small Animal"
+  },
+  {
+    "id": 4,
+    "name": "Jamunapari Goat",
+    "type": "Goat",
+    "breed": "Jamunapari",
+    "price": 30000,
+    "weight": 40,
+    "age": 2,
+    "location": "Kushtia",
+    "description": "Large sized goat, ideal for Qurbani with good body structure.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/55/Jamunapari_goat.jpg",
+    "category": "Small Animal"
+  },
+  {
+    "id": 5,
+    "name": "Deshi Sheep",
+    "type": "Sheep",
+    "breed": "Local",
+    "price": 20000,
+    "weight": 30,
+    "age": 2,
+    "location": "Mymensingh",
+    "description": "Healthy sheep raised in গ্রামের পরিবেশ.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Sheep_in_field.jpg",
+    "category": "Medium Animal"
+  },
+  {
+    "id": 6,
+    "name": "Sonali Chicken",
+    "type": "Chicken",
+    "breed": "Sonali",
+    "price": 500,
+    "weight": 2,
+    "age": 0.5,
+    "location": "Gazipur",
+    "description": "দেশি স্বাদের মুরগি, farm raised and ভালো মানের খাদ্য খাওয়ানো হয়েছে.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Chicken_on_grass.jpg",
+    "category": "Poultry"
+  },
+  {
+    "id": 7,
+    "name": "Deshi Duck",
+    "type": "Duck",
+    "breed": "Local",
+    "price": 700,
+    "weight": 2.5,
+    "age": 1,
+    "location": "Barisal",
+    "description": "Free-range duck raised near ponds, very healthy.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/32/Domestic_duck.jpg",
+    "category": "Poultry"
+  },
+  {
+    "id": 8,
+    "name": "Water Buffalo",
+    "type": "Buffalo",
+    "breed": "Murrah",
+    "price": 200000,
+    "weight": 500,
+    "age": 5,
+    "location": "Khulna",
+    "description": "Strong buffalo suitable for farming and Qurbani.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/55/Water_buffalo.jpg",
+    "category": "Large Animal"
+  },
+  {
+    "id": 9,
+    "name": "Camel",
+    "type": "Camel",
+    "breed": "Arabian",
+    "price": 350000,
+    "weight": 600,
+    "age": 6,
+    "location": "Dhaka",
+    "description": "Imported camel, rare and suitable for special Qurbani.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Camel_in_desert.jpg",
+    "category": "Exotic Animal"
+  }
+]
+}
