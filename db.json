@@ -11,7 +11,7 @@
     "age": 3,
     "location": "Bogura",
     "description": "Healthy deshi cow suitable for Qurbani. Naturally fed and well maintained.",
-    "image": "https://images.unsplash.com/photo-1596733430284-f7437764b1a9",
+    "image": "https://images.unsplash.com/photo-1527153857715-3908f2bae5e8?q=80&w=976&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "category": "Large Animal"
   },
   {
@@ -24,7 +24,7 @@
     "age": 4,
     "location": "Rajshahi",
     "description": "High-quality Sahiwal breed with excellent health condition.",
-    "image": "https://images.unsplash.com/photo-1500595046743-cd271d694d30",
+    "image": "https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=800&auto=format&fit=crop",
     "category": "Large Animal"
   },
   {
@@ -37,7 +37,7 @@
     "age": 2,
     "location": "Kushtia",
     "description": "Popular Black Bengal goat, perfect for small Qurbani.",
-    "image": "https://images.unsplash.com/photo-1601758228041-f3b2795255f1",
+    "image": "https://images.unsplash.com/photo-1608153929527-23b9758b401d?q=80&w=862&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "category": "Small Animal"
   },
   {
@@ -50,7 +50,7 @@
     "age": 2.5,
     "location": "Dhaka",
     "description": "Large sized Jamunapari goat with strong build.",
-    "image": "https://images.unsplash.com/photo-1560114928-40f1f1eb26a0",
+    "image": "https://images.unsplash.com/photo-1588466585717-f8041aec7875?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "category": "Small Animal"
   },
   {
@@ -63,7 +63,7 @@
     "age": 5,
     "location": "Chattogram",
     "description": "Imported Friesian cross cow, very large and healthy.",
-    "image": "https://images.unsplash.com/photo-1589927986089-35812388d1f4",
+    "image": "https://images.unsplash.com/photo-1596733430284-f7437764b1a9?w=800&auto=format&fit=crop",
     "category": "Large Animal"
   },
   {
@@ -76,7 +76,7 @@
     "age": 3.5,
     "location": "Chattogram",
     "description": "Famous Red Chittagong breed with strong immunity.",
-    "image": "https://images.unsplash.com/photo-1598373182133-52452f7691ef",
+    "image": "https://images.unsplash.com/photo-1628792666981-be0fb79a577d?q=80&w=772&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "category": "Large Animal"
   },
   {
@@ -89,12 +89,12 @@
     "age": 2,
     "location": "Mymensingh",
     "description": "Healthy hybrid goat with good meat quality.",
-    "image": "https://images.unsplash.com/photo-1612197527839-2f48f8705f96",
+    "image": "https://images.unsplash.com/photo-1550348579-959785e820f7?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "category": "Small Animal"
   },
   {
     "id": 8,
-    "name": "Local Deshi Goat",
+    "name": "Local Deshi Sheep",
     "type": "Goat",
     "breed": "Deshi",
     "price": 20000,
@@ -102,7 +102,7 @@
     "age": 1.5,
     "location": "Barishal",
     "description": "Affordable local goat suitable for small families.",
-    "image": "https://images.unsplash.com/photo-1598514982525-5c63d59a7c38",
+    "image": "https://images.unsplash.com/photo-1484557985045-edf25e08da73?w=800&auto=format&fit=crop",
     "category": "Small Animal"
   },
   {
@@ -115,7 +115,7 @@
     "age": 5,
     "location": "Sylhet",
     "description": "Heavyweight Brahman cross, ideal for large Qurbani.",
-    "image": "https://images.unsplash.com/photo-1500595046743-cd271d694d30",
+    "image": "https://images.unsplash.com/photo-1618080206739-14e8ac105472?q=80&w=3136&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "category": "Large Animal"
   }
 ]
