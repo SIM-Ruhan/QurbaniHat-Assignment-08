@@ -1,0 +1,124 @@
+{
+    "models": [
+  [
+  {
+    "id": 1,
+    "name": "Deshi Shahi Cow",
+    "type": "Cow",
+    "breed": "Local Deshi",
+    "price": 120000,
+    "weight": 280,
+    "age": 3,
+    "location": "Bogura",
+    "description": "Healthy deshi cow suitable for Qurbani. Naturally fed and well maintained.",
+    "image": "https://images.unsplash.com/photo-1596733430284-f7437764b1a9",
+    "category": "Large Animal"
+  },
+  {
+    "id": 2,
+    "name": "Sahiwal Premium Cow",
+    "type": "Cow",
+    "breed": "Sahiwal",
+    "price": 180000,
+    "weight": 350,
+    "age": 4,
+    "location": "Rajshahi",
+    "description": "High-quality Sahiwal breed with excellent health condition.",
+    "image": "https://images.unsplash.com/photo-1500595046743-cd271d694d30",
+    "category": "Large Animal"
+  },
+  {
+    "id": 3,
+    "name": "Black Bengal Goat",
+    "type": "Goat",
+    "breed": "Black Bengal",
+    "price": 25000,
+    "weight": 35,
+    "age": 2,
+    "location": "Kushtia",
+    "description": "Popular Black Bengal goat, perfect for small Qurbani.",
+    "image": "https://images.unsplash.com/photo-1601758228041-f3b2795255f1",
+    "category": "Small Animal"
+  },
+  {
+    "id": 4,
+    "name": "Jamunapari Goat",
+    "type": "Goat",
+    "breed": "Jamunapari",
+    "price": 40000,
+    "weight": 50,
+    "age": 2.5,
+    "location": "Dhaka",
+    "description": "Large sized Jamunapari goat with strong build.",
+    "image": "https://images.unsplash.com/photo-1560114928-40f1f1eb26a0",
+    "category": "Small Animal"
+  },
+  {
+    "id": 5,
+    "name": "Friesian Cross Cow",
+    "type": "Cow",
+    "breed": "Friesian",
+    "price": 200000,
+    "weight": 400,
+    "age": 5,
+    "location": "Chattogram",
+    "description": "Imported Friesian cross cow, very large and healthy.",
+    "image": "https://images.unsplash.com/photo-1589927986089-35812388d1f4",
+    "category": "Large Animal"
+  },
+  {
+    "id": 6,
+    "name": "Red Chittagong Cow",
+    "type": "Cow",
+    "breed": "RCC",
+    "price": 150000,
+    "weight": 300,
+    "age": 3.5,
+    "location": "Chattogram",
+    "description": "Famous Red Chittagong breed with strong immunity.",
+    "image": "https://images.unsplash.com/photo-1598373182133-52452f7691ef",
+    "category": "Large Animal"
+  },
+  {
+    "id": 7,
+    "name": "Hybrid Goat",
+    "type": "Goat",
+    "breed": "Hybrid",
+    "price": 30000,
+    "weight": 40,
+    "age": 2,
+    "location": "Mymensingh",
+    "description": "Healthy hybrid goat with good meat quality.",
+    "image": "https://images.unsplash.com/photo-1612197527839-2f48f8705f96",
+    "category": "Small Animal"
+  },
+  {
+    "id": 8,
+    "name": "Local Deshi Goat",
+    "type": "Goat",
+    "breed": "Deshi",
+    "price": 20000,
+    "weight": 30,
+    "age": 1.5,
+    "location": "Barishal",
+    "description": "Affordable local goat suitable for small families.",
+    "image": "https://images.unsplash.com/photo-1598514982525-5c63d59a7c38",
+    "category": "Small Animal"
+  },
+  {
+    "id": 9,
+    "name": "Brahman Cross Cow",
+    "type": "Cow",
+    "breed": "Brahman",
+    "price": 220000,
+    "weight": 450,
+    "age": 5,
+    "location": "Sylhet",
+    "description": "Heavyweight Brahman cross, ideal for large Qurbani.",
+    "image": "https://images.unsplash.com/photo-1500595046743-cd271d694d30",
+    "category": "Large Animal"
+  }
+]
+ 
+]
+}
