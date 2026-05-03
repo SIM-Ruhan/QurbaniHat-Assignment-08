@@ -74,7 +74,7 @@ const Allanimals = () => {
               </p>
 
               <Link href={`/all-animals/${model.id}`}>
-                <button className="w-full mt-3 bg-green-600 text-white py-2 rounded-lg hover:bg-green-700">
+                <button className="w-full mt-3 bg-[#843534] text-white py-2 rounded-lg cursor-pointer hover:bg-green-700">
                   View Details
                 </button>
               </Link>

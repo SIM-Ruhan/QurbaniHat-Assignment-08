@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import Image from "next/image";
+import Link from "next/link";
 
 const DetailsPage = () => {
   const { id } = useParams();
@@ -30,7 +31,14 @@ const DetailsPage = () => {
   }
 
   if (!animal) {
-    return <p className="p-6">Animal not found</p>;
+    return <div className="p-12 flex flex-col items-center space-y-4">
+        <p className="text-2xl font-bold text-gray-700">Animal not found!</p>
+        <Link href={'/'}>
+        <button className="btn btn-soft bg-red-200">Go back to home</button>
+        </Link>
+
+    </div>
+    
   }
 
   return (

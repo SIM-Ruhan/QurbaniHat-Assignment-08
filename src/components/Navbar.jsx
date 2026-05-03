@@ -41,7 +41,7 @@ const Navbar = () => {
     
 <Link href={"/"} className='btn'>Log In</Link>
          
- <Link href={"/all-animals" } className='btn'>Register</Link>
+ <Link href={"/signup" } className='btn'>Register</Link>
          
   </div>
 </div>

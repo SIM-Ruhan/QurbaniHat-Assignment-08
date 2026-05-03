@@ -49,7 +49,7 @@ export default function HomePage() {
           </p>
 
           <Link href="/all-animals">
-            <button className="bg-green-600 px-6 py-3 rounded-lg hover:bg-green-700 transition">
+            <button className="bg-[#843534] px-6 py-3 rounded-lg hover:bg-green-700 cursor-pointer transition">
               Browse Animals
             </button>
           </Link>
@@ -86,8 +86,8 @@ export default function HomePage() {
                     ৳ {animal.price.toLocaleString()}
                   </p>
 
-                  <Link href={`/details/${animal.id}`}>
-                    <button className="w-full bg-green-600 text-white py-2 rounded hover:bg-green-700">
+                  <Link href={`/all-animals/${animal.id}`}>
+                    <button className="w-full bg-[#843534] text-white py-2 rounded cursor-pointer hover:bg-green-700">
                       View Details
                     </button>
                   </Link>
