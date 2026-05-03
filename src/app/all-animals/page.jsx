@@ -10,7 +10,7 @@ const Allanimals = () => {
   const [loading, setLoading] = useState(true); 
 
   useEffect(() => {
-    fetch("http://localhost:8000/models/")
+    fetch("https://qurbani-hat-assignment-08-r8hu.vercel.app/data.json")
       .then((res) => res.json())
       .then((data) => {
         setModels(Array.isArray(data[0]) ? data[0] : data);
