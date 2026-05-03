@@ -1,6 +1,7 @@
 "use client";
 import { authClient } from "@/lib/auth-client";
 import { Check } from "@gravity-ui/icons";
+
 import {
   Button,
   Card,
@@ -12,30 +13,36 @@ import {
   TextField,
 } from "@heroui/react";
 import { useRouter } from "next/navigation";
+import { toast } from "react-toastify";
 
 export default function SignUpPage() {
     const router = useRouter()
   const onSubmit = async (e) => {
-    e.preventDefault();
-    const name = e.target.name.value
-    const email = e.target.email.value
-    const password = e.target.password.value
+  e.preventDefault();
 
-   const {data,error} = await authClient.signUp.email({
+  const name = e.target.name.value;
+  const email = e.target.email.value;
+  const password = e.target.password.value;
+
+  const { data, error } = await authClient.signUp.email({
     name,
     email,
-    password
-   },{
-    onSuccess: () => {
-        router.push('/')
-    } 
-   })
+    password,
+  });
 
-  };
+  if (error) {
+    toast.error("Registration failed");
+    return;
+  }
+
+  toast.success("Registration successful!");
+
+  router.push("/");
+};
 
   return (
     <Card className="border mx-auto w-125 py-10 mt-5">
-      <h1 className="text-center text-2xl font-bold">Sign Up</h1>
+      <h1 className="text-center text-2xl font-bold">Register</h1>
 
       <Form className="flex w-96 mx-auto flex-col gap-4" onSubmit={onSubmit}>
         <TextField isRequired name="name" type="text">
