@@ -12,7 +12,7 @@ const Navbar = () => {
   const handleLogOut = async () => {
     await authClient.signOut();
   };
-
+                                               
   return (
     <div>
       <div className="navbar bg-base-100 shadow-sm">
