@@ -10,7 +10,7 @@ export default function HomePage() {
 
   // fetch data
   useEffect(() => {
-    fetch("https://qurbani-hat-assignment-08-r8hu.vercel.app/data.json")
+    fetch("http://localhost:8000/models/")
       .then((res) => res.json())
       .then((data) => {
         const models = Array.isArray(data[0]) ? data[0] : data;
