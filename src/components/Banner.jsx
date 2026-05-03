@@ -125,8 +125,8 @@ export default function HomePage() {
       </section>
 
     
-      <section className="mx-auto px-6 pb-16 bg-gray-100">
-        
+      <section className="bg-gray-100 py-12 px-6">
+        <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-8">
           Top Breeds
         </h2>
@@ -148,6 +148,7 @@ export default function HomePage() {
             <p>Large and premium dairy breed</p>
           </div>
 
+        </div>
         </div>
       </section>
 
