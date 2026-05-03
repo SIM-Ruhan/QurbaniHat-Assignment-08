@@ -46,6 +46,9 @@ const Navbar = () => {
               <li>
                 <Link href={"/all-animals"}>All Animals</Link>
               </li>
+              <li>
+                <Link href={"/my-profile"}>My Profile</Link>
+              </li>
             </ul>
           </div>
 
@@ -64,6 +67,9 @@ const Navbar = () => {
             <li>
               <Link href={"/all-animals"}>All Animals</Link>
             </li>
+            <li>
+                <Link href={"/my-profile"}>My Profile</Link>
+              </li>
           </ul>
         </div>
 

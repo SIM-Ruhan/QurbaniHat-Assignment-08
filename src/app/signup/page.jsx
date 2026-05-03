@@ -16,42 +16,60 @@ import { useRouter } from "next/navigation";
 import { toast } from "react-toastify";
 
 export default function SignUpPage() {
-    const router = useRouter()
+  const router = useRouter();
+
   const onSubmit = async (e) => {
-  e.preventDefault();
+    e.preventDefault();
 
-  const name = e.target.name.value;
-  const email = e.target.email.value;
-  const password = e.target.password.value;
+    const name = e.target.name.value;
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+    const image = e.target.image.value; 
 
-  const { data, error } = await authClient.signUp.email({
-    name,
-    email,
-    password,
-  });
+    const { data, error } = await authClient.signUp.email({
+      name,
+      email,
+      password,
+      image, 
+    });
 
-  if (error) {
-    toast.error("Registration failed");
-    return;
-  }
+    if (error) {
+      toast.error("Registration failed");
+      return;
+    }
 
-  toast.success("Registration successful!");
-  router.push("/");
-};
+    toast.success("Registration successful!");
+    router.push("/");
+  };
 
   return (
-    <Card className="border mx-auto w-125 py-10 mt-5">
+    <Card className="border mx-auto w-[85%] lg:w-125 py-10 mt-5">
       <h1 className="text-center text-2xl font-bold">Register</h1>
 
-      <Form className="flex w-96 mx-auto flex-col gap-4" onSubmit={onSubmit}>
+      <Form className="flex lg:w-96 w-[95%] mx-auto flex-col gap-4" onSubmit={onSubmit}>
+        
+   
         <TextField isRequired name="name" type="text">
           <Label>Name</Label>
           <Input placeholder="Enter your name" />
           <FieldError />
         </TextField>
 
-        
 
+       
+        <TextField
+          name="image"
+          type="text"
+        >
+          <Label>Profile Image URL</Label>
+          <Input placeholder="Enter your image URL here" />
+          <Description>
+            Add a profile image link
+          </Description>
+          <FieldError />
+        </TextField>
+
+   
         <TextField
           isRequired
           name="email"
@@ -60,7 +78,6 @@ export default function SignUpPage() {
             if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(value)) {
               return "Please enter a valid email address";
             }
-
             return null;
           }}
         >
@@ -69,6 +86,7 @@ export default function SignUpPage() {
           <FieldError />
         </TextField>
 
+        
         <TextField
           isRequired
           minLength={8}
@@ -84,18 +102,19 @@ export default function SignUpPage() {
             if (!/[0-9]/.test(value)) {
               return "Password must contain at least one number";
             }
-
             return null;
           }}
         >
           <Label>Password</Label>
           <Input placeholder="Enter your password" />
           <Description>
-            Must be at least 8 characters with 1 uppercase and 1 number
+            Must be at least 8 characters.
           </Description>
           <FieldError />
         </TextField>
 
+
+    
         <div className="flex gap-2">
           <Button type="submit">
             <Check />
@@ -105,6 +124,7 @@ export default function SignUpPage() {
             Reset
           </Button>
         </div>
+
       </Form>
     </Card>
   );

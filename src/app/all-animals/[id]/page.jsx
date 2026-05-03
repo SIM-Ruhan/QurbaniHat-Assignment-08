@@ -1,12 +1,19 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
+import { authClient } from "@/lib/auth-client";
+import { toast } from "react-toastify";
+
 
 const DetailsPage = () => {
   const { id } = useParams();
+  const router = useRouter();
+
+  const { data: session } = authClient.useSession();
+  const user = session?.user;
 
   const [animal, setAnimal] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -27,25 +34,45 @@ const DetailsPage = () => {
   }, [id]);
 
   if (loading) {
-    return <p className="p-6">Loading...</p>;
+    return (
+      <div className="flex items-center justify-center p-8">
+        <span className="loading loading-spinner text-error"></span>
+      </div>
+    );
   }
 
   if (!animal) {
-    return <div className="p-12 flex flex-col items-center space-y-4">
-        <p className="text-2xl font-bold text-gray-700">Animal not found!</p>
-        <Link href={'/'}>
-        <button className="btn btn-soft bg-red-200">Go back to home</button>
+    return (
+      <div className="p-12 flex flex-col items-center space-y-4">
+        <p className="text-2xl font-bold text-gray-700">
+          Animal not found!
+        </p>
+        <Link href={"/"}>
+          <button className="btn btn-soft bg-red-200">
+            Go back to home
+          </button>
         </Link>
-
-    </div>
-    
+      </div>
+    );
   }
+
+ 
+  const handleBooking = (e) => {
+    e.preventDefault();
+
+   
+    if (!user) {
+      toast.error("Please login to book an animal");
+      return;
+    }
+
+    toast.success("Booking successful !");
+    e.target.reset();
+  };
 
   return (
     <div className="p-6 max-w-5xl mx-auto">
       <div className="bg-white shadow-lg rounded-xl overflow-hidden">
-        
-     
         <Image
           src={animal.image}
           alt={animal.name}
@@ -74,23 +101,19 @@ const DetailsPage = () => {
         </div>
       </div>
 
-      
-      <div className="mt-8 bg-white shadow-lg rounded-xl p-6">
-        <h2 className="text-2xl font-bold mb-4">Book This Animal</h2>
 
-        <form
-          onSubmit={(e) => {
-            e.preventDefault();
-            alert("Booking Successful!");
-            e.target.reset();
-          }}
-          className="grid gap-4"
-        >
+      <div className="mt-8 bg-white shadow-lg rounded-xl p-6">
+        <h2 className="text-2xl font-bold mb-4">
+          Book This Animal
+        </h2>
+
+        <form onSubmit={handleBooking} className="grid gap-4">
           <input
             type="text"
             placeholder="Your Name"
             required
             className="border p-2 rounded"
+            defaultValue={user?.name || ""}
           />
 
           <input
@@ -98,6 +121,7 @@ const DetailsPage = () => {
             placeholder="Your Email"
             required
             className="border p-2 rounded"
+            defaultValue={user?.email || ""}
           />
 
           <input

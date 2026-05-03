@@ -7,18 +7,26 @@ import { useEffect, useState } from "react";
 const Allanimals = () => {
   const [models, setModels] = useState([]);
   const [sortOrder, setSortOrder] = useState("default");
+  const [loading, setLoading] = useState(true); 
 
- 
   useEffect(() => {
     fetch("http://localhost:8000/models/")
       .then((res) => res.json())
       .then((data) => {
-       
         setModels(Array.isArray(data[0]) ? data[0] : data);
-      });
+        setLoading(false); 
+      })
+      .catch(() => setLoading(false));
   }, []);
 
- 
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center p-8">
+        <span className="loading loading-spinner text-error"></span>
+      </div>
+    );
+  }
+
   const sortedModels = [...models].sort((a, b) => {
     if (sortOrder === "low") return a.price - b.price;
     if (sortOrder === "high") return b.price - a.price;
@@ -29,7 +37,6 @@ const Allanimals = () => {
     <div className="p-6">
       <h1 className="text-2xl font-bold mb-6">All Animals</h1>
 
-    
       <div className="mb-6 flex items-center gap-4">
         <span className="font-semibold">Sort by price:</span>
 
@@ -44,7 +51,6 @@ const Allanimals = () => {
         </select>
       </div>
 
-    
       <div className="grid md:grid-cols-3 gap-6">
         {sortedModels.map((model, index) => (
           <div
