@@ -31,22 +31,22 @@ const MyProfile = () => {
     <div className="max-w-xl mx-auto p-6 animate__animated animate__fadeIn">
       <h1 className="text-3xl font-bold mb-6">My Profile</h1>
 
-      <div className="bg-white rounded-xl shadow-md overflow-hidden p-6">
+      <div className="bg-white rounded-xl shadow-md overflow-hidden p-6 flex items-center">
        
         <Image
   src={user.image}
   alt="profile"
   width={100}
-  height={100} className="w-full object-cover"
+  height={100} className="w-full object-cover rounded-full"
 unoptimized
 />
 
-        <p>
-          <strong>Name:</strong> {user.name}
+        <p className="text-2xl font-bold">
+           {user.name}
         </p>
 
-        <p>
-          <strong>Email:</strong> {user.email}
+        <p className="text-gray-500">
+           {user.email}
         </p>
 
         

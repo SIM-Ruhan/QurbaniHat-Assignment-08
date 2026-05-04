@@ -1,9 +1,9 @@
 "use client";
 import { authClient } from "@/lib/auth-client";
-import { RxAvatar } from "react-icons/rx";
 import Link from "next/link";
 import React from "react";
 import { PiCowDuotone } from "react-icons/pi";
+import Image from "next/image";
 
 const Navbar = () => {
   const { data: session } = authClient.useSession();
@@ -79,7 +79,13 @@ const Navbar = () => {
             <>
           
               <div className="flex items-center gap-1">
-               <RxAvatar />
+                  <Image
+                 src={user?.image}
+                 alt="profile"
+                 width={100}
+                 height={100} className="object-cover rounded-full"
+               unoptimized
+               />
                 <span className="font-semibold">{user?.name}</span>
               </div>
 
