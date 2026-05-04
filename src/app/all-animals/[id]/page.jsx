@@ -19,7 +19,7 @@ const DetailsPage = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:3000/data.json")
+    fetch("https://qurbani-hat-assignment-08-vz7v-ncpxeyh0e.vercel.app/data.json")
       .then((res) => res.json())
       .then((data) => {
         const models = Array.isArray(data[0]) ? data[0] : data;
