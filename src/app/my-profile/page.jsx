@@ -32,14 +32,17 @@ const MyProfile = () => {
       <h1 className="text-3xl font-bold mb-6">My Profile</h1>
 
       <div className="bg-white rounded-xl shadow-md overflow-hidden p-6 flex items-center">
-       
-        <Image
-  src={user.image}
-  alt="profile"
-  width={100}
-  height={100} className="w-full object-cover rounded-full"
-unoptimized
-/>
+      <div className="avatar">
+  <div className="w-24 rounded-full">
+    <Image
+                 src={user?.image}
+                 alt="profile"
+                 width={100}
+                 height={100} className="object-cover rounded-full"
+               unoptimized
+               />
+  </div></div>
+
 
         <p className="text-2xl font-bold">
            {user.name}

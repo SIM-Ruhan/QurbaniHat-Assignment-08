@@ -79,14 +79,17 @@ const Navbar = () => {
             <>
           
               <div className="flex items-center gap-1">
-                  <Image
+                  
+               <div className="avatar">
+  <div className="w-24 rounded-full">
+    <Image
                  src={user?.image}
                  alt="profile"
                  width={100}
                  height={100} className="object-cover rounded-full"
                unoptimized
                />
-                <span className="font-semibold">{user?.name}</span>
+  </div></div>
               </div>
 
               
