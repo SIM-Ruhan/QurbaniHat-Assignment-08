@@ -26,7 +26,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-                 <a className="btn btn-ghost text-[#aa67c2] font-bold md:text-2xl"><PiCowDuotone />QurbaniHat</a>
+                 <a className="btn btn-ghost text-[#aa67c2] font-bold text-2xl"><PiCowDuotone />QurbaniHat</a>
             </div>
 
             <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-400 max-w-xs">

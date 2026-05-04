@@ -12,7 +12,7 @@ const Navbar = () => {
   const handleLogOut = async () => {
     await authClient.signOut();
   };
-                                               
+  
   return (
     <div>
       <div className="navbar bg-base-100 shadow-sm">
@@ -52,9 +52,9 @@ const Navbar = () => {
             </ul>
           </div>
 
-          <a className="btn btn-ghost font-bold md:text-2xl">
+          <a className="btn btn-ghost font-bold text-3xl">
             <PiCowDuotone />
-            QurbaniHat
+             <span className="hidden sm:inline">QurbaniHat</span>
           </a>
         </div>
 
@@ -104,10 +104,10 @@ const Navbar = () => {
           ) : (
             <>
              
-              <Link href={"/login"} className="btn">
+              <Link href={"/login"} className="btn text-blue-600">
                 Log In
               </Link>
-              <Link href={"/signup"} className="btn">
+              <Link href={"/signup"} className="btn text-green-700">
                 Register
               </Link>
             </>
