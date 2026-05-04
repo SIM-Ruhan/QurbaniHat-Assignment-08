@@ -87,6 +87,7 @@ const Navbar = () => {
                  alt="profile"
                  width={100}
                  height={100} className="object-cover rounded-full"
+                 referrerPolicy="no-referrer"
                unoptimized
                />
   </div></div>

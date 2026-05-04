@@ -31,14 +31,15 @@ const MyProfile = () => {
     <div className="max-w-xl mx-auto p-6 animate__animated animate__fadeIn">
       <h1 className="text-3xl font-bold mb-6">My Profile</h1>
 
-      <div className="bg-white rounded-xl shadow-md overflow-hidden p-6 flex items-center">
+      <div className="bg-white rounded-xl shadow-md overflow-hidden p-6">
       <div className="avatar">
   <div className="w-24 rounded-full">
     <Image
                  src={user?.image}
                  alt="profile"
                  width={100}
-                 height={100} className="object-cover rounded-full"
+                 height={100} className="object-cover rounded-full h-25 w-25"
+                 referrerPolicy="no-referrer"
                unoptimized
                />
   </div></div>
