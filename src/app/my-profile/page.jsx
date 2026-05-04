@@ -40,7 +40,7 @@ const MyProfile = () => {
         alt="profile"
         width={128}
         height={128}
-        className="w-full h-full object-cover rounded-full border-4 border-gray-200 shadow-sm"
+        className="w-full h-full object-cover rounded-full border-4 border-gray-100 shadow-sm"
         referrerPolicy="no-referrer"
         unoptimized
       />

@@ -8,7 +8,7 @@ export default function HomePage() {
   const [animals, setAnimals] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // fetch data
+  
   useEffect(() => {
     fetch("/data.json")
       .then((res) => res.json())
@@ -96,6 +96,12 @@ export default function HomePage() {
             ))}
           </div>
         )}
+
+        <Link href={"/all-animals"}>
+                    <button className="bg-[#8e4746] text-white py-2 rounded cursor-pointer flex flex-col items-center hover:bg-green-700">
+                      View All
+                    </button>
+                  </Link>
       </section>
 
 
