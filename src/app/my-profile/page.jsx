@@ -36,7 +36,7 @@ const MyProfile = () => {
     {/* Profile Image */}
     <div className="w-32 h-32 mb-4">
       <Image
-        src={user?.image || "/default-avatar.png"}
+        src={user?.image}
         alt="profile"
         width={128}
         height={128}
@@ -48,18 +48,18 @@ const MyProfile = () => {
 
     {/* Name */}
     <h2 className="text-xl md:text-2xl font-bold mt-2">
-      {user?.name || "No Name"}
+      {user?.name}
     </h2>
 
     {/* Email */}
     <p className="text-gray-500 mt-1">
-      {user?.email || "No Email"}
+      {user?.email}
     </p>
 
 
     {/* Button */}
     <Link href="/my-profile/update">
-      <button className="w-full md:w-auto px-6 py-2 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 transition duration-200">
+      <button className="w-full md:w-auto mt-4 px-6 py-2 btn btn-soft btn-info">
         Update Profile
       </button>
     </Link>
