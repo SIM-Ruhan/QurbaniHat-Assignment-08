@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+#  QurbaniHat – Livestock Booking Platform
 
-## Getting Started
+##  Project Overview
 
-First, run the development server:
+QurbaniHat is a modern livestock marketplace web application where users can explore animals (such as cows and goats) for Qurbani. Users can view detailed information about each animal and place a booking after authentication.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+##  Purpose
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+The goal of this project is to provide a simple, user-friendly platform for browsing and booking livestock for Qurbani. It demonstrates frontend development skills using Next.js, authentication, routing, and responsive UI design.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+##  Live URL
 
-To learn more about Next.js, take a look at the following resources:
+https://qurbani-hat-assignment-08-a25g.vercel.app
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+##  Key Features
 
-## Deploy on Vercel
+*  User Authentication (Email/Password + Google Login)
+*  Home Page with Hero Section & Featured Animals
+*  All Animals Page with Sorting (Price Low → High / High → Low)
+*  Dynamic Animal Details Page
+*  Booking Form (with success message & reset)
+*  User Profile Page
+*  Update Profile Information Feature
+*  Protected Routes (Details & Profile pages)
+*  Loading State & Error Handling
+*  Fully Responsive (Mobile, Tablet, Desktop)
+*  Custom 404 (Not Found) Page
+*  Clean & Unique UI Design
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Technologies Used
+
+* **Next.js (App Router)**
+* **React.js**
+* **Tailwind CSS**
+* **Firebase Authentication**
+* **React Hooks (useState, useEffect)**
+
+---
+
+##  NPM Packages Used
+
+* `next`
+* `react`
+* `react-dom`
+* `lucide-react` 
+* `lottie-react`
+
+---
+
+## 🧠 Challenges Faced
+
+* Managing client-side data fetching with `useEffect`
+* Handling dynamic routes in Next.js
+* Implementing authentication and protected routes
+* Ensuring proper responsive design across devices
+
+
+
