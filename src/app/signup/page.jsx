@@ -122,7 +122,7 @@ export default function SignUpPage() {
         <div className="flex gap-2">
           <Button type="submit">
             <Check />
-            Submit
+            Register
           </Button>
           <Button type="reset" variant="secondary" className='text-red-600'>
             Reset

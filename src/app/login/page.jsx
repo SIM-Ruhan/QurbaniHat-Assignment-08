@@ -109,7 +109,7 @@ export default function LogInPage() {
         <div className="flex gap-2">
           <Button type="submit">
             <Check />
-            Submit
+            Login
           </Button>
           <Button type="reset" variant="secondary" className={"text-red-600"}>
             Reset

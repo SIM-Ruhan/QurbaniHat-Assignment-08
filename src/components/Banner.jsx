@@ -98,7 +98,7 @@ export default function HomePage() {
         )}
 
         <Link href={"/all-animals"}>
-                    <button className="bg-[#8e4746] text-white py-2 rounded cursor-pointer flex flex-col items-center hover:bg-green-700">
+                    <button className="bg-[#843534] text-white py-3 px-12  rounded cursor-pointer hover:bg-green-700 flex w-40 mx-auto font-semibold mt-10">
                       View All
                     </button>
                   </Link>

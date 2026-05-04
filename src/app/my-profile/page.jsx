@@ -28,7 +28,7 @@ const MyProfile = () => {
   }
 
   return (
-   <div className="w-[40%] mx-auto px-4 py-8 animate__animated animate__fadeIn">
+   <div className="w-80 lg:w-[40%] mx-auto px-4 py-8 animate__animated animate__fadeIn">
   <h1 className="text-3xl font-bold text-center mb-8">My Profile</h1>
 
   <div className="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center">

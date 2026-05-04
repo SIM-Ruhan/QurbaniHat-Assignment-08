@@ -1,6 +1,8 @@
 import Link from "next/link";
-import Image from "next/image";
+import { FaFacebook } from "react-icons/fa6";
 import { PiCowDuotone } from "react-icons/pi";
+import { FaWhatsapp } from "react-icons/fa6";
+import { FaTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -35,7 +37,7 @@ const Footer = () => {
           {/* Product */}
           <div>
             <h3 className="text-sm font-semibold text-black dark:text-white mb-4">
-              Product
+              Social Info
             </h3>
             <ul className="space-y-3 text-sm text-gray-600 dark:text-gray-400">
               <li>
@@ -43,7 +45,10 @@ const Footer = () => {
                   href="/generate"
                   className="hover:text-black dark:hover:text-white transition"
                 >
-                  Generate
+                 
+                  <div className="flex items-center gap-1">
+ <FaFacebook/>Facebook
+                </div>
                 </Link>
               </li>
               <li>
@@ -51,15 +56,20 @@ const Footer = () => {
                   href="/all-photos"
                   className="hover:text-black dark:hover:text-white transition"
                 >
-                  Gallery
+                 
+                 <div className="flex items-center gap-1">
+<FaWhatsapp/> Whatsapp
+                </div>
                 </Link>
               </li>
               <li>
                 <Link
                   href="/pricing"
                   className="hover:text-black dark:hover:text-white transition"
-                >
-                  Pricing
+                ><div className="flex items-center gap-1">
+ <FaTwitter/> Twitter
+                </div>
+                
                 </Link>
               </li>
             </ul>
