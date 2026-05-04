@@ -28,39 +28,43 @@ const MyProfile = () => {
   }
 
   return (
-    <div className="max-w-xl mx-auto p-6 animate__animated animate__fadeIn">
-      <h1 className="text-3xl font-bold mb-6">My Profile</h1>
+   <div className="max-w-xl mx-auto px-4 py-8 animate__animated animate__fadeIn">
+  <h1 className="text-3xl font-bold text-center mb-8">My Profile</h1>
 
-      <div className="bg-white rounded-xl shadow-md overflow-hidden p-6">
-      <div className="avatar">
-  <div className="w-24 rounded-full">
-    <Image
-                 src={user?.image}
-                 alt="profile"
-                 width={100}
-                 height={100} className="object-cover rounded-full h-25 w-25"
-                 referrerPolicy="no-referrer"
-               unoptimized
-               />
-  </div></div>
-
-
-        <p className="text-2xl font-bold">
-           {user.name}
-        </p>
-
-        <p className="text-gray-500">
-           {user.email}
-        </p>
-
-        
-        <Link href="/my-profile/update">
-          <button className="btn btn-primary mt-4">
-            Update Profile
-          </button>
-        </Link>
-      </div>
+  <div className="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center">
+    
+    {/* Profile Image */}
+    <div className="w-32 h-32 mb-4">
+      <Image
+        src={user?.image || "/default-avatar.png"}
+        alt="profile"
+        width={128}
+        height={128}
+        className="w-full h-full object-cover rounded-full border-4 border-gray-200 shadow-sm"
+        referrerPolicy="no-referrer"
+        unoptimized
+      />
     </div>
+
+    {/* Name */}
+    <h2 className="text-xl md:text-2xl font-bold mt-2">
+      {user?.name || "No Name"}
+    </h2>
+
+    {/* Email */}
+    <p className="text-gray-500 mt-1">
+      {user?.email || "No Email"}
+    </p>
+
+
+    {/* Button */}
+    <Link href="/my-profile/update">
+      <button className="w-full md:w-auto px-6 py-2 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 transition duration-200">
+        Update Profile
+      </button>
+    </Link>
+  </div>
+</div>
   );
 };
 
